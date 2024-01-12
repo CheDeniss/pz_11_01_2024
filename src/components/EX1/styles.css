@@ -1,0 +1,21 @@
+* {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin: 10px;
+    color: navy;
+    font-weight: bold;
+    padding: 10px;
+}
+
+li:hover{
+    background: #eabf6d;
+    transition: background-color 0.3s;
+}
