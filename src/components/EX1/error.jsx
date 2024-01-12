@@ -3,7 +3,7 @@ import React from 'react';
 const Error = () => {
     return (
         <div>
-            <h1>404</h1>
+            <img src="https://http.cat/images/404.jpg" alt="404"/>
         </div>
     );
 };

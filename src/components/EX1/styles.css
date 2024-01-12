@@ -4,18 +4,35 @@
     font-family: sans-serif;
 }
 
-ul {
+.menu-ul {
     display: flex;
 }
 
-li {
+.menu-li {
     margin: 10px;
     color: navy;
     font-weight: bold;
     padding: 10px;
+    display: flex;
+    align-items: center
 }
 
-li:hover{
+.menu-li:hover{
     background: #eabf6d;
+    border-radius: 15px;
     transition: background-color 0.3s;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item{
+    margin: 15px;
+}
+
+.gallery-item:hover{
+    scale: 105%;
+    transition: scale 0.2s;
 }

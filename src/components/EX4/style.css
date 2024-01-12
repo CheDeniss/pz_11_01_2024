@@ -1,0 +1,12 @@
+.ex4-input{
+    width: 250px;
+    margin-right: 10px;
+}
+
+.container{
+        display: inline-block;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: #80ce80;
+    padding: 20px;
+}

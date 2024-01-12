@@ -1,0 +1,9 @@
+.inputs{
+    width: 250px;
+}
+
+.container{
+    background: #747493;
+    border-radius: 15px;
+    display: inline-block;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
-import './styles.css'
+import {useParams} from "react-router-dom";
 
-const Gallery = () => {
+const ParamEX3 = () => {
 
     const galleryArr = [
         "https://upload.wikimedia.org/wikipedia/commons/a/af/Vincent_Van_Gogh_-_The_Potato_Eaters.png",
@@ -12,14 +12,15 @@ const Gallery = () => {
         "https://upload.wikimedia.org/wikipedia/commons/b/b6/Gogh4.jpg"
     ]
 
+    const {newH} = useParams();
 
     return (
         <div>
-            <h2>Галерея</h2>
+            <h2>Галерея з параметрами</h2>
             <ul className="gallery">
                 {
                     galleryArr.map((src, index) => (
-                        <li key={index}><img height={600} className="gallery-item" src={src} alt="Picture"/></li>
+                        <li className="gallery-item" key={index}><img height={newH} src={src} alt="Picture"/></li>
                     ))
                 }
 
@@ -28,4 +29,4 @@ const Gallery = () => {
     );
 };
 
-export default Gallery;
+export default ParamEX3;
